@@ -8,41 +8,82 @@ h1, h2, h3, h4, h5, h6, body {
     margin: 0;
 }
 
-.body-container {
-    width: 100%;
+.main-container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Header start */
+
 header {
-    color: white;
-    height: 25vh;
-    border-bottom: 1px solid black;
-    background: url("../images/header-image.jpg") center no-repeat;
-    background-size: cover;
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto; /*may be I shouldn't use this*/
+    border: 2px solid black;
+    height: 100%;
+    position: relative;
+}
+
+.header__inner {
+    height: 150px;
 }
 
 .header__logo {
+    font-family: 'Kanit', sans-serif;
+    font-size: 35px;
+    float: left;
+}
+
+.navigation {
     position: absolute;
-    left: 200px;
-    font-size: 30px;
-    font-weight: 700;
-}
-
-nav > a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    position: relative;
-}
-
-.header {
-    position: relative;
-    top: 0;
-    left: 0;
     right: 0;
-    z-index: 1000;
+    bottom: 0;
+}
+
+.navigation a {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: blue;
+    padding-right: 20px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Header end */
+/* Body start */
+
+.body-content {
+    float: left;
+    max-width: 80%;
+}
+
+.left-side-block {
+    float: left;
+    max-width: 20%;
+}
+
+@media (max-width: 1200px) {
+    .main-container {
+        max-width: 970px;
+    }
+}
+@media (max-width: 992px) {
+    .main-container {
+        max-width: 750px;
+    }
+}
+@media (max-width: 767px) {
+    .main-container {
+        max-width: none;
+    }
+    .header__logo {
+        font-size: 25px;
+    }
+    .navigation {
+        position: relative;
+        text-align: center;
+    }
+    .left-side-block {
+        display: none;
+    }
+    .body-content {
+        max-width: 100%;
+    }
 }
