@@ -1,0 +1,125 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, body, p {
+    margin: 0;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header start */
+
+header {
+    border: 2px solid black;
+    height: 150px;
+    position: relative;
+}
+
+.header__logo {
+    font-family: 'Kanit', sans-serif;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.navigation {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+.navigation a {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: blue;
+    padding-right: 20px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Header end */
+/* Body start */
+
+.body-container {
+    font-family: 'Oxygen', sans-serif;
+}
+
+.body-content {
+    float: left;
+    max-width: 80%;
+    padding: 20px;
+}
+
+.article {
+    margin-bottom: 30px;
+}
+
+.article-post-date {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.article-preview {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Body end */
+/* Left-side block start */
+
+.left-side-block {
+    float: left;
+    max-width: 20%;
+    max-height: 100%;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#profile-logo {
+    width: 150px;
+    max-width: 100%;
+}
+
+.user-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.media-buttons {
+    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .main-container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-container {
+        max-width: none;
+    }
+    .header__logo {
+        font-size: 20px;
+    }
+    .left-side-block {
+        display: none;
+    }
+    .body-content {
+        max-width: 100%;
+    }
+}
