@@ -17,12 +17,12 @@ a {
     text-decoration: none;
     color: midnightblue;
 }
+
 /* Header start */
 
 header {
     border-bottom: 2px solid black;
     height: 150px;
-    /*position: relative;*/
     display: flex;
     background-color: purple;
     align-items: flex-end;
@@ -33,17 +33,13 @@ header {
     font-family: 'Kanit', sans-serif;
     font-size: 35px;
     padding: 10px;
+    margin-left: 20px;
     color: white;
     align-self: flex-start;
 }
 
-/*.navigation {*/
-/*    position: absolute;*/
-/*    right: 0;*/
-/*    bottom: 10px;*/
-/*}*/
-
 .navigation {
+    margin-bottom: 5px;
 }
 
 .navigation a {
@@ -94,9 +90,6 @@ header {
 .article-preview {
     font-size: 18px;
     margin-bottom: 30px;
-}
-
-.buttons {
 }
 
 .like-button, .comment-button, .more-button {
@@ -202,7 +195,7 @@ header {
         flex-direction: column;
     }
     .navigation {
-        margin: 0 auto;
+        margin: 0 auto 5px;
     }
     .navigation a {
         margin-right: 7px;
