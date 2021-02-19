@@ -11,6 +11,8 @@ h1, h2, h3, h4, h5, h6, body, p {
 .main-container {
     max-width: 1200px;
     margin: 0 auto;
+    font-family: 'Oxygen', sans-serif;
+    color: midnightblue;
 }
 
 a {
@@ -63,17 +65,17 @@ header {
 }
 
 /* Header end */
+/* Index page start */
 /* Body start */
-
-.body-container {
-    font-family: 'Oxygen', sans-serif;
-    color: midnightblue;
-}
 
 .body-content {
     float: left;
     max-width: 80%;
     padding: 20px;
+}
+
+article {
+    font-size: 18px;
 }
 
 .article {
@@ -88,7 +90,6 @@ header {
 }
 
 .article-preview {
-    font-size: 18px;
     margin-bottom: 30px;
 }
 
@@ -154,6 +155,29 @@ header {
 }
 
 /* Left-side block end */
+/* Footer start */
+
+
+
+/* Footer end */
+/* Index page end */
+
+/* Article page start */
+/* Body start */
+
+
+
+/* Body end */
+
+.post {
+    float: left;
+    max-width: 80%;
+    padding: 20px;
+}
+
+.article-full {
+}
+
 /* Adaptive design start */
 
 @media (max-width: 1200px) {
