@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6, body, p {
 
 .main-container {
     max-width: 1200px;
+    max-height: 100000px;
     margin: 0 auto;
     font-family: 'Oxygen', sans-serif;
     color: midnightblue;
@@ -20,11 +21,15 @@ a {
     color: midnightblue;
 }
 
+p {
+    margin: 0 0 15px;
+}
 /* Header start */
 
 header {
     border-bottom: 2px solid black;
     height: 150px;
+    /*max-height: 10000px;*/
     display: flex;
     background-color: purple;
     align-items: flex-end;
@@ -67,6 +72,11 @@ header {
 /* Header end */
 /* Index page start */
 /* Body start */
+
+.body-container {
+    float: left;
+    max-height: 100%;
+}
 
 .body-content {
     float: left;
@@ -158,6 +168,19 @@ article {
 /* Footer start */
 
 
+.footer-container {
+    float: left;
+    width: 1200px;
+    max-width: 100%;
+    height: 30px;
+    text-align: center;
+    border-top: 1px solid gray;
+}
+
+.footer {
+    padding: 10px;
+    font-size: 14px;
+}
 
 /* Footer end */
 /* Index page end */
@@ -225,6 +248,9 @@ article {
         margin-right: 7px;
         margin-left: 7px;
         font-family: 'Oxygen', sans-serif;
+    }
+    .post {
+        max-width: 100%;
     }
 }
 
